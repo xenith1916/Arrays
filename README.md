@@ -7,10 +7,10 @@ This repository is full of classical array algorithms and problems solution spec
 
 ## Problems
 
-* Trapping Rainwater problem
+* [Trapping Rainwater problem]
 * Minmum platforms problem
 
-## Trapping Rainwater
+## Trapping Rainwater problem
 #### Approach 1- Brute Force
 For each element in the array, we find the maximum level of water it can trap after the rain, which is equal to the minimum of maximum height of bars on both the sides minus its own height.
 #### Algorithm
@@ -25,4 +25,19 @@ For each element in the array, we find the maximum level of water it can trap af
 #### Complexity 
 * Time complexity:- O(n^2)-----For each element of array, we iterate the left and right parts.
 * Auxillary Space:-O(1)----Extra space
-
+#### Approach 2-Using two pointers(Optimized solution of above problrm)
+Instead of computing the left and right parts seperately,we can do it in one iteration, if right_maximum[i]>left_maximum[i] the water trapped depends upon the left_max, and similar as in the case when left_maximum[i]>right_maximum[i] the water trapped depends upon the right_maximum. So, we can say that if there is a larger bar at one end (say right), we are assured that the water trapped would be dependant on height of bar in current direction (from left to right). As soon as we find the bar at other end (right) is smaller, we start iterating in opposite direction (from right to left). We must maintain left_maximum and right_maximum during the iteration, but now we can do it in one iteration using 2 pointers, switching between the two. 
+#### Algorith
+* Initialize left pointer to 0 and right pointer to size-1
+* while left<right
+      * if arr[left]<arr[right]
+           * if arr[left]>=left_maximum, update left_maximum
+           * else add left_maximum-height[left] to result
+           * Add 1 to left
+      * else
+           * if arr[right]>=right_maximum, update right_maximum
+           * else add right_maximum-arr[left] to result
+           * subtract 1 to right
+#### complexity
+* Time complexity:- O(n)-----For single iteration
+* Auxillary Space:-O(1)----Extra space,only constant space required
