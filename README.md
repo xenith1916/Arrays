@@ -30,11 +30,11 @@ Instead of computing the left and right parts seperately,we can do it in one ite
 #### Algorith
 * Initialize left pointer to 0 and right pointer to size-1
 * while left<right
-      * if arr[left]<arr[right]
+*      if arr[left]<arr[right]
            * if arr[left]>=left_maximum, update left_maximum
            * else add left_maximum-height[left] to result
            * Add 1 to left
-      * else
+*      else
            * if arr[right]>=right_maximum, update right_maximum
            * else add right_maximum-arr[left] to result
            * subtract 1 to right
