@@ -7,7 +7,7 @@ This repository is full of classical array algorithms and problems solution spec
 
 ## Problems
 
-* [Trapping Rainwater problem](https://github.com/xenith1916/Arrays/blob/master/Trapping-Rainwater-Problem)
+* [Trapping Rainwater problem](https://github.com/xenith1916/Arrays/blob/master/README.md#trapping-rainwater-problem)
 * Minmum platforms problem
 
 ## Trapping Rainwater problem
@@ -25,7 +25,7 @@ For each element in the array, we find the maximum level of water it can trap af
 #### Complexity 
 * Time complexity:- O(n^2)-----For each element of array, we iterate the left and right parts.
 * Auxillary Space:-O(1)----Extra space
-#### Approach 2-Using two pointers(Optimized solution of above problrm)
+#### Approach 2-Using two pointers(Optimized solution of above problrm)-----
 Instead of computing the left and right parts seperately,we can do it in one iteration, if right_maximum[i]>left_maximum[i] the water trapped depends upon the left_max, and similar as in the case when left_maximum[i]>right_maximum[i] the water trapped depends upon the right_maximum. So, we can say that if there is a larger bar at one end (say right), we are assured that the water trapped would be dependant on height of bar in current direction (from left to right). As soon as we find the bar at other end (right) is smaller, we start iterating in opposite direction (from right to left). We must maintain left_maximum and right_maximum during the iteration, but now we can do it in one iteration using 2 pointers, switching between the two. 
 #### Algorith
 * Initialize left pointer to 0 and right pointer to size-1
