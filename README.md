@@ -7,7 +7,7 @@ This repository is full of classical array algorithms and problems solution spec
 
 ## Problems
 
-* [Trapping Rainwater problem]
+* [Trapping Rainwater problem](https://github.com/xenith1916/Arrays/blob/master/Trapping-Rainwater-Problem)
 * Minmum platforms problem
 
 ## Trapping Rainwater problem
