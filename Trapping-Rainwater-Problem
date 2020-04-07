@@ -2,6 +2,9 @@
 /* Given an array arr[] of N non-negative integers representing height of blocks at index i as Ai where the width of each block is 1. 
 Compute how much water can be trapped in between blocks after raining.*/
 
+//Time complexity----o(n)
+//Auxiliary Space----o(1)
+
 
 #include<bits/stdc++.h>
 using namespace std;
