@@ -43,7 +43,7 @@ Instead of computing the left and right parts seperately,we can do it in one ite
 * Auxillary Space:-O(1)----Extra space,only constant space required
 
 ## Minimum platforms problem
-#### Approach        [code](
+#### Approach        [code](https://github.com/xenith1916/Arrays/blob/master/Minimum-platforms)
 The basic idea is to merge the arrival and departure time of the train and consider them in sorted order. We maintain a counter to count number of trains present at the station at any point of time.The counter also represents number of platforms  needed at the time.
 * if train is scheduled to arrive next,we increase the counter by 1 and update minimum platforms needed if count is more than minimum platforms needed so far.
 * if train is scheduled to depart next, we decrease the counter by 1.
