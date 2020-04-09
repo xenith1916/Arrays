@@ -41,3 +41,7 @@ Instead of computing the left and right parts seperately,we can do it in one ite
 #### complexity
 * Time complexity:- O(n)-----For single iteration
 * Auxillary Space:-O(1)----Extra space,only constant space required
+
+## Minimum platforms problem
+#### Approach
+The basic idea is to merge the arrival and departure time of the train and consider them in sorted order. 
