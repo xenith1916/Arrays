@@ -9,6 +9,13 @@ This repository is full of classical array algorithms and problems solution spec
 
 * [Trapping Rainwater problem](https://github.com/xenith1916/Arrays/blob/master/README.md#trapping-rainwater-problem)
 * [Minmum platforms problem](https://github.com/xenith1916/Arrays/blob/master/README.md#minimum-platforms-problem)
+* Sub Array With Given Sum
+* Count the Triplets
+* Kadane's Algorithm(Largest Sum Contiguous Array)
+* Missing Number in an Array
+* Merge two Sorted Array
+* Rearrange Array Alternatively
+* Number of pairs
 
 ## Trapping Rainwater problem
 #### Approach 1- Brute Force
