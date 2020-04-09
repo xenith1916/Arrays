@@ -44,4 +44,10 @@ Instead of computing the left and right parts seperately,we can do it in one ite
 
 ## Minimum platforms problem
 #### Approach
-The basic idea is to merge the arrival and departure time of the train and consider them in sorted order. 
+The basic idea is to merge the arrival and departure time of the train and consider them in sorted order. We maintain a counter to count number of trains present at the station at any point of time.The counter also represents number of platforms  needed at the time.
+* if train is scheduled to arrive next,we increase the counter by 1 and update minimum platforms needed if count is more than minimum platforms needed so far.
+* if train is scheduled to depart next, we decrease the counter by 1.
+*          when two trains are scheduled to arrive and depart at the same time, we depart the trail first.
+#### Complexity
+* Time Complexity:-O(nlog n)------- assuming that a O(nLogn) sorting algorithm for sorting arr[] and dep[].
+* Auxillary Space:-O(1)
