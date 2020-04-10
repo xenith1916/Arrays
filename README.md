@@ -16,6 +16,15 @@ This repository is full of classical array algorithms and problems solution spec
 * Merge two Sorted Array
 * Rearrange Array Alternatively
 * Number of pairs
+* Chocolate Distribution Problem
+* Pythagorean Triplet
+* Kth Smallest Element(Using Min Heap)
+* Kth Smallest Element(O(n))
+* Reverse Array in Groups
+* Leaders in an Array
+* Equilibrium Index
+* Sort an Array of 0's,1's and 2's
+
 
 ## Trapping Rainwater problem
 #### Approach 1- Brute Force
